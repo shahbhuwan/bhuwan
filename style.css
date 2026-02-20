@@ -55,7 +55,6 @@ html {
   font-size: clamp(16px, 1.1vw, 24px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -97,11 +96,9 @@ img {
 .section {
   padding: var(--section-padding);
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  scroll-snap-align: start;
 }
 
 .section-label {
@@ -312,7 +309,6 @@ img {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  scroll-snap-align: start;
 }
 
 /* Animated contour background */
@@ -962,6 +958,15 @@ img {
   flex-direction: column;
   gap: 32px;
   margin-top: 48px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.skill-category {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .skill-category h3 {
@@ -1236,7 +1241,6 @@ img {
   border-top: 1px solid var(--border-subtle);
   padding: 30px 0;
   text-align: center;
-  scroll-snap-align: center;
 }
 
 .footer p {

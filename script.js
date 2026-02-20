@@ -141,12 +141,33 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        const offset = 80;
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      // Scroll to the section heading (not the section box) so large section padding
+      // doesn't make the heading appear too low after navigation.
+      let scrollTarget = target;
+      if (target.classList.contains('section')) {
+        scrollTarget = target.querySelector('.section-title') || target;
       }
+
+      // Compute a safe offset so the heading never tucks under the fixed navbar.
+      // The navbar has two sizes (default + "scrolled"), so we offset by whichever
+      // is larger at the moment.
+      const navHeightCurrent = navbar.getBoundingClientRect().height;
+
+      const wasScrolled = navbar.classList.contains('scrolled');
+      navbar.classList.add('scrolled');
+      const navHeightScrolled = navbar.getBoundingClientRect().height;
+      if (!wasScrolled && window.scrollY <= 80) navbar.classList.remove('scrolled');
+
+      const navHeight = Math.max(navHeightCurrent, navHeightScrolled);
+      const gap = 30; // breathing room below navbar bottom line
+      const offset = navHeight + gap;
+
+      const top = scrollTarget.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 
