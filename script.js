@@ -137,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-
   // ---- Smooth Scroll for Anchor Links ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -150,6 +149,51 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // ---- Number Count-Up Animation ----
+  const countUpElements = document.querySelectorAll('.count-up');
+
+  const countUpObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        // Parse securely by stripping everything except digits in case the user hardcoded "$45"
+        const targetStr = el.getAttribute('data-target') || '0';
+        const target = parseInt(targetStr.replace(/\D/g, ''), 10) || 0;
+        const prefix = el.getAttribute('data-prefix') || '';
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 2000; // 2 seconds animation
+        let startTime = null;
+
+        function animateCount(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const percentage = Math.min(progress / duration, 1);
+
+          // Easing function to slow down at the end
+          const easeOut = percentage === 1 ? 1 : 1 - Math.pow(2, -10 * percentage);
+          const currentCount = Math.floor(easeOut * target);
+
+          el.textContent = `${prefix}${currentCount}${suffix}`;
+
+          if (progress < duration) {
+            window.requestAnimationFrame(animateCount);
+          } else {
+            el.textContent = `${prefix}${target}${suffix}`;
+          }
+        }
+
+        window.requestAnimationFrame(animateCount);
+        // Stop observing once animated
+        countUpObserver.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.5,
+    rootMargin: '0px 0px -20px 0px'
+  });
+
+  countUpElements.forEach(el => countUpObserver.observe(el));
 
 });
 
