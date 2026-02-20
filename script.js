@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Typewriter Effect ----
   const roles = [
-    'Climate Modeler',
-    'Software Engineer',
+    'Environmental Data Scientist',
+    'Model Developer',
     'Watershed Scientist',
-    'Data-Driven Problem Solver',
-    'Open-Source Developer'
+    'Open-Source Developer',
+    'Geospatial Data Specialist'
   ];
 
   const typewriterEl = document.getElementById('typewriter');
@@ -166,3 +166,52 @@ function toggleAbstract(pubId) {
     btn.innerHTML = 'Show abstract <span>→</span>';
   }
 }
+
+// ---- Talk Modal Logic ----
+window.openTalkModal = function (btn, type) {
+  const card = btn.closest('.conf-card');
+  const title = card.querySelector('h3').textContent;
+  const dataNode = card.querySelector('.conf-data');
+
+  const modal = document.getElementById('talkModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+
+  if (!modal) return;
+
+  modalTitle.textContent = title;
+
+  if (type === 'abstract') {
+    const abstractText = dataNode && dataNode.querySelector('.talk-abstract') ? dataNode.querySelector('.talk-abstract').innerHTML : 'Abstract coming soon...';
+    modalBody.innerHTML = `<p>${abstractText}</p>`;
+  } else if (type === 'poster') {
+    const posterSrc = dataNode && dataNode.querySelector('.talk-poster') ? dataNode.querySelector('.talk-poster').textContent.trim() : '';
+    if (posterSrc) {
+      modalBody.innerHTML = `<img src="${posterSrc}" alt="Poster" style="width: 100%; height: auto; border-radius: 8px;">`;
+    } else {
+      modalBody.innerHTML = `<p>Poster coming soon...</p>`;
+    }
+  }
+
+  modal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('talkModal');
+  if (modal) {
+    const modalClose = modal.querySelector('.modal-close');
+
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+});
