@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhuwan Shah — Climate Modeler &amp; Software Engineer</title>
+  <meta name="description" content="PhD researcher building production-grade climate data tools and hydrologic models. Bridging climate science with software engineering for real-world conservation impact." />
+  <meta property="og:title" content="Bhuwan Shah — Climate Modeler & Software Engineer" />
+  <meta property="og:description" content="I build tools and models that help the world adapt to a changing climate." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">B<span>.</span>Shah</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#conferences">Talks</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <path class="contour-line" d="M-100,600 C200,550 400,700 720,500 C1040,300 1200,450 1540,400" />
+        <path class="contour-line" d="M-100,650 C250,600 450,750 720,550 C990,350 1250,500 1540,450" />
+        <path class="contour-line" d="M-100,500 C200,450 350,600 720,400 C1090,200 1200,350 1540,300" />
+        <path class="contour-line" d="M-100,550 C250,500 400,650 720,450 C1040,250 1250,400 1540,350" />
+        <path class="contour-line" d="M-100,700 C200,650 500,800 720,600 C940,400 1200,550 1540,500" />
+        <path class="contour-line" d="M-100,750 C250,700 550,850 720,650 C890,450 1250,600 1540,550" />
+      </svg>
+    </div>
+    <div class="hero-gradient"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-name">BHUWAN <span class="accent">SHAH</span></h1>
+      <div class="hero-roles">
+        <span id="typewriter"></span><span class="cursor"></span>
+      </div>
+      <p class="hero-tagline">
+        I build tools and models that help the world adapt to a changing climate.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Explore My Work ↓</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / ELEVATOR PITCH ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building Climate Resilience<br/>Through Code &amp; Science</h2>
+          <p>
+            I'm a <strong>PhD researcher</strong> who builds <strong>production-grade climate data tools</strong> used by federal agencies and research institutions. I combine deep domain expertise in hydrology and conservation engineering with strong software engineering skills to create <strong>scalable solutions</strong> for environmental challenges.
+          </p>
+          <p>
+            My work lives at the intersection of <strong>computational modeling</strong>, <strong>climate science</strong>, and <strong>real-world conservation planning</strong> — from writing open-source libraries that process terabytes of climate data, to running watershed simulations that inform how we protect Iowa's soil and water for future generations.
+          </p>
+          <div class="stat-cards reveal-stagger">
+            <div class="stat-card">
+              <div class="stat-number">€35K+</div>
+              <div class="stat-label">Competitive Grants</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Software Libraries</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Conference Presentations</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">21+</div>
+              <div class="stat-label">Watersheds Modeled</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-photo-wrapper reveal">
+          <img src="Images/Profile.jpg" alt="Bhuwan Shah" class="about-photo" />
+          <div class="about-photo-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS — WHAT I BUILD ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">What I Build</span>
+        <h2 class="section-title">Turning Climate Data Into Real-World Impact</h2>
+        <p class="section-subtitle">Each project tells a story: a problem that needed solving, the science &amp; code I brought to it, and the impact it made.</p>
+      </div>
+      <div class="projects-grid reveal-stagger">
+
+        <!-- Project 1: GridFlow -->
+        <div class="project-card">
+          <div class="project-icon">⚡</div>
+          <h3>GridFlow</h3>
+          <p class="project-pitch">Open-source toolkit for massive climate data processing</p>
+          <p class="project-narrative">
+            <strong>The Problem:</strong> Climate researchers spend weeks downloading and wrangling terabytes of
+            CMIP6 data before they can even start analysis.<br/>
+            <strong>My Solution:</strong> Built a modular Python library with both CLI and GUI that automates
+            downloading, cropping, clipping, and preprocessing of climate products at scale.<br/>
+            <strong>The Impact:</strong> Published to the Journal of Open Source Software (JOSS). Used across
+            multiple research projects for scalable climate data workflows.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+            <span class="tag">GUI</span>
+            <span class="tag">CMIP6</span>
+            <span class="tag amber">Open Source</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/shahbhuwan/GridFlow" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="#publications">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              JOSS Paper
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Climate-Resilient Conservation -->
+        <div class="project-card">
+          <div class="project-icon">🌊</div>
+          <h3>Climate-Resilient Conservation Framework</h3>
+          <p class="project-pitch">Future-proofing Iowa's soil and water conservation</p>
+          <p class="project-narrative">
+            <strong>The Problem:</strong> Conservation practice designs rely on historical climate data that
+            no longer represents future conditions under climate change.<br/>
+            <strong>My Solution:</strong> Developed a scalable framework integrating high-resolution, bias-corrected
+            climate projections into WEPP erosion modeling. Tested across 21 watersheds with scenarios including
+            contouring and vegetative buffers.<br/>
+            <strong>The Impact:</strong> Presented at the Iowa Water Conference. Supports Iowa's nutrient reduction
+            goals and long-term conservation planning under projected extremes.
+          </p>
+          <div class="project-tags">
+            <span class="tag">WEPP</span>
+            <span class="tag">CMIP6</span>
+            <span class="tag">Bias Correction</span>
+            <span class="tag amber">Conservation</span>
+          </div>
+          <div class="project-links">
+            <a href="#conferences">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Conference Talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: SAR Soil Moisture -->
+        <div class="project-card">
+          <div class="project-icon">🛰️</div>
+          <h3>SAR Soil Moisture Retrieval</h3>
+          <p class="project-pitch">Seeing through crops with physics-constrained ML</p>
+          <p class="project-narrative">
+            <strong>The Problem:</strong> C-band SAR satellites can't accurately measure soil moisture under
+            dense crop canopies — a critical "blind spot" across the entire Corn Belt.<br/>
+            <strong>My Solution:</strong> Built a physics-constrained machine learning framework that fuses
+            L-band (structural penetration) with C-band (surface sensitivity) SAR data for continental-scale
+            soil moisture retrieval.<br/>
+            <strong>The Impact:</strong> Achieved RMSE ≈ 0.012 m³/m³. Presented at AGU 2025. Provides a
+            blueprint for multi-frequency missions like NISAR.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">SAR</span>
+            <span class="tag">Remote Sensing</span>
+            <span class="tag amber">CONUS-Scale</span>
+          </div>
+          <div class="project-links">
+            <a href="#conferences">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              AGU Presentation
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: NRCS AWM Climate Integration -->
+        <div class="project-card">
+          <div class="project-icon">🏗️</div>
+          <h3>NRCS AWM Climate Integration</h3>
+          <p class="project-pitch">Stress-testing federal infrastructure tools with future climate</p>
+          <p class="project-narrative">
+            <strong>The Problem:</strong> The NRCS Animal Waste Management tool only uses historical climate,
+            making it blind to increasing extreme storm risks under climate change.<br/>
+            <strong>My Solution:</strong> Developed bias-corrected, downscaled CMIP6 climate projection inputs
+            compatible with the AWM tool, enabling it to simulate under future climate scenarios.<br/>
+            <strong>The Impact:</strong> Revealed ~17% increases in extreme storm intensity. Directly supports
+            federal agency decision-making for manure storage design and environmental compliance.
+          </p>
+          <div class="project-tags">
+            <span class="tag">NRCS</span>
+            <span class="tag">Downscaling</span>
+            <span class="tag">Infrastructure</span>
+            <span class="tag amber">Federal Agency</span>
+          </div>
+          <div class="project-links">
+            <a href="#conferences">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              CALS Presentation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Published Work</span>
+        <h2 class="section-title">Research That Ships</h2>
+        <p class="section-subtitle">Peer-reviewed manuscripts and open-source software papers.</p>
+      </div>
+      <div class="publications-list reveal-stagger">
+
+        <div class="pub-card" id="pub1">
+          <div class="pub-header">
+            <h3>Effectiveness of Multivariate Bias Correction in Hydrology and Agriculture: A Systematic Review</h3>
+            <span class="pub-badge submitted">Submitted</span>
+          </div>
+          <p class="pub-journal">Hydrology and Earth System Sciences (HESS)</p>
+          <div class="pub-abstract">
+            <p>A comprehensive systematic review examining multivariate bias correction methods and their effectiveness in hydrological and agricultural applications. Evaluates statistical relationships, preservation of inter-variable dependencies, and hydrologic relevance across diverse climate modeling frameworks.</p>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub1')">
+            Show abstract <span>→</span>
+          </button>
+        </div>
+
+        <div class="pub-card" id="pub2">
+          <div class="pub-header">
+            <h3>GridFlow: A Modular High-Performance Toolkit for Downloading and Processing Large-Scale Climate and Geospatial Datasets</h3>
+            <span class="pub-badge submitted">Submitted</span>
+          </div>
+          <p class="pub-journal">Journal of Open Source Software (JOSS)</p>
+          <div class="pub-abstract">
+            <p>Introduces GridFlow, an open-source Python library providing streamlined tools for downloading, cropping, clipping, and preprocessing CMIP climate products. Features both command-line and graphical interfaces for accessibility across technical skill levels. Supports bias correction, temporal aggregation, and quality control workflows at scale.</p>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub2')">
+            Show abstract <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS & GRANTS ===== -->
+  <section class="section" id="awards">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Recognition</span>
+        <h2 class="section-title">Funded to Solve Hard Problems</h2>
+      </div>
+      <div class="awards-grid reveal-stagger">
+
+        <div class="award-card">
+          <div class="award-emoji">🌍</div>
+          <div class="award-amount">€30,000</div>
+          <h3>IPCC Scholarship Programme</h3>
+          <p>
+            <em>"Enhancing Water Resilience with 1-Minute Climate Projections in the Colorado Rockies and Nepal Himalayas"</em>
+            — Selected as a Nepalese PhD student from a Least Developed Country, advancing high-resolution
+            temporal downscaling and international capacity building.
+          </p>
+        </div>
+
+        <div class="award-card">
+          <div class="award-emoji">💧</div>
+          <div class="award-amount">$5,000</div>
+          <h3>Water Resilience Collaborative (WRC) Graduate Student Grant</h3>
+          <p>
+            <em>"Drops of Resilience: Precision Projections for Iowa's Watersheds"</em>
+            — Developing high-resolution, bias-corrected climate projections for Iowa,
+            validated using Mesonet and ASOS observations for WEPP integration.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONFERENCES & TALKS ===== -->
+  <section class="section" id="conferences">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">On Stage</span>
+        <h2 class="section-title">Sharing Ideas That Matter</h2>
+      </div>
+      <div class="conf-grid reveal-stagger">
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">AGU 2025</span>
+            <span class="conf-badge oral">Oral</span>
+          </div>
+          <h3>Integrated SAR Bands for Surface Soil Moisture Retrieval in Vegetated Landscapes (CONUS)</h3>
+          <span class="conf-date">Fall 2025</span>
+        </div>
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">Iowa Water Conference</span>
+            <span class="conf-badge oral">Oral</span>
+          </div>
+          <h3>Adapting to Extremes: A Scalable Framework for Climate-Resilient Conservation in Iowa</h3>
+          <span class="conf-date">Fall 2025</span>
+        </div>
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">CALS Research Day</span>
+            <span class="conf-badge oral">Oral</span>
+          </div>
+          <h3>Assessing the Vulnerability of Swine Manure Storage to Extreme Weather Events in Northwest Iowa</h3>
+          <span class="conf-date">February 2026</span>
+        </div>
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">ASABE Iowa Section</span>
+            <span class="conf-badge poster">Poster</span>
+          </div>
+          <h3>Sediment Delivery from Hillslopes with Vegetative Buffers (WEPP)</h3>
+          <span class="conf-date">Fall 2024</span>
+        </div>
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">ASABE Annual</span>
+            <span class="conf-badge abstract">Abstract</span>
+          </div>
+          <h3>Unmasking Buffer Efficiency: Defining Critical Thresholds for Sediment and Nutrient Retention</h3>
+          <span class="conf-date">2026</span>
+        </div>
+
+        <div class="conf-card">
+          <div class="conf-top">
+            <span class="conf-venue">SWCS Conference</span>
+            <span class="conf-badge abstract">Abstract</span>
+          </div>
+          <h3>A Revised Soil Vulnerability Index Based on Physical Erosion Modeling of Seasonal Climate Variability</h3>
+          <span class="conf-date">2026</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS / TOOLKIT ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Toolkit</span>
+        <h2 class="section-title">What I Work With</h2>
+        <p class="section-subtitle">The tools, languages, and frameworks I use daily to build impactful solutions.</p>
+      </div>
+      <div class="skills-categories reveal-stagger">
+
+        <div class="skill-category">
+          <h3>Languages &amp; Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Scientific Computing</span>
+            <span class="skill-tag">Automation &amp; Scripting</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Modular Software Design</span>
+            <span class="skill-tag">Open-Source Development</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Modeling &amp; Simulation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">WEPP</span>
+            <span class="skill-tag">WEPPCloud</span>
+            <span class="skill-tag">RUSLE2</span>
+            <span class="skill-tag">NRCS AWM</span>
+            <span class="skill-tag">Watershed Modeling</span>
+            <span class="skill-tag">Erosion &amp; Sediment Transport</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Climate &amp; Data</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">CMIP6 / HighResMIP</span>
+            <span class="skill-tag">Bias Correction</span>
+            <span class="skill-tag">Spatial Downscaling</span>
+            <span class="skill-tag">Temporal Downscaling</span>
+            <span class="skill-tag">NetCDF Processing</span>
+            <span class="skill-tag">Quality Control</span>
+            <span class="skill-tag">Large-Scale Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Computing &amp; ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">High Performance Computing</span>
+            <span class="skill-tag">GPU Programming (OpenACC / CUDA)</span>
+            <span class="skill-tag">Parallel Workflows</span>
+            <span class="skill-tag">Physics-Constrained ML</span>
+            <span class="skill-tag">SAR Remote Sensing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Communication &amp; Leadership</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Grant Writing (PI)</span>
+            <span class="skill-tag">Scientific Publishing</span>
+            <span class="skill-tag">Technical Presentations</span>
+            <span class="skill-tag">Poster Design</span>
+            <span class="skill-tag">Teaching &amp; Mentoring</span>
+            <span class="skill-tag">Federal Stakeholder Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOFTWARE / OPEN SOURCE ===== -->
+  <section class="section" id="software">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Open Source</span>
+        <h2 class="section-title">Software I've Shipped</h2>
+        <p class="section-subtitle">Research-grade tools built for the community.</p>
+      </div>
+      <div class="software-featured reveal">
+
+        <div class="software-card">
+          <div class="software-info">
+            <h3>GridFlow</h3>
+            <p class="project-pitch">Download, crop, clip, and preprocess climate data — fast.</p>
+            <p>
+              A modular, high-performance Python toolkit for working with large-scale CMIP6 climate and geospatial
+              datasets. Designed for researchers who need reproducible, scriptable climate data workflows without
+              the usual setup pain.
+            </p>
+            <div class="software-features">
+              <span class="tag">CLI Interface</span>
+              <span class="tag">GUI Interface</span>
+              <span class="tag">CMIP6 Support</span>
+              <span class="tag">Batch Processing</span>
+              <span class="tag amber">JOSS Submitted</span>
+            </div>
+            <div class="software-links">
+              <a href="https://github.com/shahbhuwan/GridFlow" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.82rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="software-visual">
+            <div class="terminal-mock">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+              </div>
+              <div class="terminal-body">
+                <div><span class="cmd">$ pip install gridflow</span></div>
+                <div><span class="output">Successfully installed gridflow-1.0.0</span></div>
+                <br/>
+                <div><span class="cmd">$ gridflow download --model ACCESS-CM2 \</span></div>
+                <div><span class="cmd">&nbsp;&nbsp;--variable pr --scenario ssp245</span></div>
+                <div><span class="output">Downloading 42 files...</span></div>
+                <div><span class="success">✓ Complete — 3.2 GB processed</span></div>
+                <br/>
+                <div><span class="cmd">$ gridflow preprocess --crop Iowa \</span></div>
+                <div><span class="cmd">&nbsp;&nbsp;--bias-correct --output ./ready/</span></div>
+                <div><span class="success">✓ 21 watersheds ready for analysis</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEACHING ===== -->
+  <section class="section" id="teaching">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Teaching</span>
+        <h2 class="section-title">Passing It Forward</h2>
+      </div>
+      <div class="teaching-grid reveal-stagger">
+
+        <div class="teaching-card">
+          <span class="teaching-code">ABE 431 / 531</span>
+          <h3>Design &amp; Evaluation of Soil and Water Conservation Systems</h3>
+          <span class="teaching-semester">Fall 2024 · Lab + Lectures</span>
+          <p>
+            Taught soil erosion by water, precipitation processes, watershed delineation, and
+            RUSLE2-based erosion assessment. Delivered both laboratory sessions and lectures.
+          </p>
+        </div>
+
+        <div class="teaching-card">
+          <span class="teaching-code">TSM 3240</span>
+          <h3>Soil and Water Conservation Management</h3>
+          <span class="teaching-semester">Spring 2025 · Lab Coordination</span>
+          <p>
+            Coordinated the Watershed Delineation Lab, organized TauDEM scripts and instructional materials.
+            Trained undergraduate and graduate students on WEPPCloud workflows.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" style="justify-content: center;">Let's Connect</span>
+        <h2 class="section-title" style="text-align: center;">Interested in Working Together?</h2>
+        <p class="contact-subtitle">
+          Whether it's about research collaboration, open-source contributions, or industry opportunities — I'd love to hear from you.
+        </p>
+      </div>
+      <div class="contact-links reveal-stagger">
+        <a href="mailto:bshah@iastate.edu" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          bshah@iastate.edu
+        </a>
+        <a href="https://github.com/shahbhuwan" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/shahbhuwan/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          Google Scholar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Bhuwan Shah · Built with purpose.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

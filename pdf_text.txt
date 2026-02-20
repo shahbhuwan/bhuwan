@@ -1,0 +1,349 @@
+Total pages: 9
+--- PAGE 1 ---
+Spring 2024  
+Activities & Work Completed  
+• Completed formal Python programming training  to strengthen scientific computing 
+and data processing skills.  
+• Received training in WEPPCloud and WEPP  for watershed -scale soil erosion and 
+hydrologic modeling.  
+• Configured and ran WEPP models for multiple watersheds, including:  
+o Hickory Creek  
+o Upper Duck Creek  
+o Lower Duck Creek  
+o Lost Creek  
+• Developed custom Python scripts  to: 
+o Modify WEPP slope files programmati cally  
+o Extract and post -process WEPP model outputs  
+• Initiated early -stage development of Python -based tools  to support climate data 
+processing workflows.  
+• Explored and discussed best practices for NetCDF data storage and conversion , 
+including formats such as .npy  and .npz . 
+Skills Learned & Strengthened  
+• Python for scientific computing and automation  
+• Watershed modeling using WEPP and WEPPCloud  
+• Data preprocessing and postprocessing for hydrologic models  
+• Handling and structuring large climate datasets (NetCDF conc epts)  
+• Scripting for model parameter manipulation and results extraction  
+• Research -oriented problem solving and workflow design  
+Project / Research Summary  
+During Spring 2024, I focused on building a strong technical foundation in watershed modeling 
+and scientific programming. I successfully transitioned from training to applied modeling by 
+configuring and running WEPP simulations across multiple Iowa watersheds. In parallel, I began 
+developing Python scripts to automate repetitive modeling tasks and expl ored efficient ways to 
+store and process climate datasets. This period marked the start of my long -term work in 
+integrating climate data workflows with physically based hydrologic and erosion models.  
+Summer 2024  
+Activities & Work Completed  
+• Continued softwa re development focused on GridOPS , a Python -based climate data 
+processing toolkit.  
+
+--- PAGE 2 ---
+• Designed and implemented modular functions to support end -to-end climate data 
+workflows, including:  
+o Saving processed data to compressed formats ( .npz ) 
+o Quality control and va lidation checks  
+o Calendar conversions (e.g., 360 -day and no -leap calendars to Gregorian)  
+o Unit conversions for climate variables  
+o Spatial cropping of gridded datasets  
+o Temporal stacking and slicing of time -series data  
+o Visualization tools for both 2D and 3D plo tting 
+• Tested functions on real climate datasets to ensure usability and scalability for research 
+applications.  
+Skills Learned & Strengthened  
+• Modular software design in Python  
+• Climate data preprocessing and standardization  
+• Handling multiple climate model calendar conventions  
+• Data validation and quality assurance techniques  
+• Scientific visualization (2D and 3D plots)  
+• Writing reusable, research -grade code for large datasets  
+Project / Research Summary  
+In Summer 2024, I shifted toward focused software dev elopment aimed at supporting climate 
+data processing for hydrologic and environmental modeling. I built and tested a suite of reusable 
+Python functions under the GridOPS framework, addressing common challenges such as 
+calendar inconsistencies, unit convers ions, and large -scale data handling. This work laid the 
+groundwork for scalable climate data workflows that would later be integrated into watershed 
+and conservation modeling studies.  
+Fall 2024  
+Activities & Work Completed  
+• Taught ABE 431/531: Design & Evaluation of Soil and Water Conservation Systems , 
+delivering both laboratory sessions and lectures.  
+o Topics taught included soil erosion by water, precipitation processes in the 
+hydrologic cycle, watershed delineation, and RUSLE2 -based erosion assessment.  
+• Designed and presented a research poster  titled “Sediment Delivery from Hillslopes with 
+Vegetative Buffers (WEPP)”  at the Iowa Section Meeting of the American Society of 
+Agricultural and Biological Engineers (ASABE) . 
+• Conducted physically based modeling usi ng WEPP  to evaluate sediment delivery from 
+agricultural hillslopes with varying vegetative buffer widths.  
+• Attended professional training workshops at the Pittsburgh Supercomputing Center , 
+including:  
+o High Performance Computing (HPC) Workshop  
+
+--- PAGE 3 ---
+o GPU Programming Using OpenACC  
+• Continued software development by enhancing GridOPS  with additional climate data 
+processing functionality.  
+Skills Learned & Strengthened  
+• Teaching and instructional delivery in soil and water conservation engineering  
+• Physically  based erosion and sediment transport modeling using WEPP  
+• Analysis of vegetative buffer effectiveness for sediment mitigation  
+• Interpretation of hillslope geometry effects (concave, linear, convex) on erosion 
+dynamics  
+• Scientific communication through poster  design and technical presentation  
+• High -performance computing concepts and GPU acceleration fundamentals  
+• Advanced climate data processing and workflow optimization  
+Poster / Project Summary  
+In Fall 2024, I presented a research poster examining sediment deli very from agricultural 
+hillslopes with vegetative buffers using the WEPP model , focusing on the Upper Duck 
+Creek watershed near Davenport, Iowa (92.75 km²) . The study simulated 21 years of climate 
+data (2000 –2020) across representative hillslopes with vari ed slopes derived from a 30 m DEM 
+and conventional corn –soybean management.  
+The modeling results demonstrated that wider buffers are generally more effective at 
+reducing sediment delivery , with a standard 30-ft buffer achieving approximately 60% 
+sediment r eduction , and diminishing returns observed beyond this width. Grass buffers were 
+found to be the most effective overall, though no statistically significant differences were 
+observed among vegetative buffer types. The analysis further showed that hillslope  shape plays a 
+critical role, with concave slopes reducing erosive energy and convex slopes increasing it.  
+This work highlighted the capability of WEPP to simulate erosion and sediment transport at 
+HUC -12 scales , providing actionable insights for targeting  Best Management Practices (BMPs) 
+and informing cost -effective conservation planning. The poster strengthened my experience in 
+integrating modeling, spatial data, and scientific communication to address real -world soil and 
+water conservation challenges.  
+Spring 2025  
+Activities & Work Completed  
+• Began development of climate projection inputs for the NRCS Animal Waste 
+Management (AWM) tool , with the goal of enabling AWM simulations to incorporate 
+future climate scenarios  rather than relying solely on historical climate data.  
+o Designed workflows to bias -correct and downscale CMIP6/HighResMIP climate 
+projections for direct integration into AWM modeling.  
+
+--- PAGE 4 ---
+o Focused on ensuring compatibility with NRCS conservation planning framew orks 
+and operational use.  
+• Advanced spatial downscaling workflows  for the CETWI case study, continuing 
+development of scalable climate –hydrologic integration methods.  
+• Prepared and processed climate datasets for the AWM case study , including 
+precipitation an d temperature inputs structured for physically based modeling.  
+• Participated in the Scott County RCPP: Working Lands for Resilient Communities  
+kickoff meeting and conducted watershed -level testing across 21 watersheds in 
+collaboration with project partners.  
+• Contributed workflow figures and technical content to the NRCS –CPF Technical 
+Report , supporting climate -informed conservation planning.  
+• Taught and coordinated the Watershed Delineation Lab  for TSM 3240: Soil and Water 
+Conservation Management , including or ganization of TauDEM scripts and instructional 
+materials.  
+• Trained undergraduate and graduate collaborators on WEPPCloud  workflows for 
+watershed modeling.  
+Grants & Awards  
+• Awarded the Water Resilience Collaborative (WRC) Graduate Student Grant 
+($5,000)  for the project “Drops of Resilience: Precision Projections for Iowa’s 
+Watersheds”   
+• Awarded the IPCC Scholarship Programme Grant (€30,000)  for the project 
+“Enhancing Water Resilience with 1 -Minute Climate Projections in the Colorado 
+Rockies and Nepal Himalayas”   
+o Selected as a Nepalese PhD student from a Least Developed Country (LDC), 
+supporting advanced climate downscaling research and international capacity 
+building.  
+Skills Learned & Strengthened  
+• Climate projection development for decision -support tools (NRCS A WM)  
+• Bias correction and spatial –temporal downscaling of CMIP6/HighResMIP data  
+• Structuring climate data for operational conservation models  
+• Integration of climate projections with hydrologic and erosion models  
+• Grant writing and project leadership as Principal Investigator  
+• Technical communication with federal agency stakeholders (NRCS)  
+• Teaching, mentoring, and research coordination  
+Project / Research Summary  
+During Spring 2025, I focused on bridging the gap between climate projections and applied 
+conse rvation tools , particularly through the development of future climate inputs for the NRCS 
+Animal Waste Management (AWM) model . This work addressed a key limitation of current 
+AWM applications by enabling simulations under projected climate conditions, impr oving the 
+tool’s relevance for long -term nutrient management and conservation planning.  
+
+--- PAGE 5 ---
+In parallel, I secured two major competitive awards. The WRC Graduate Student Grant  
+supported the development of high -resolution, bias -corrected climate projections for  Iowa 
+watersheds, validated using Mesonet and ASOS observations and designed for integration with 
+WEPP and other hydrologic models . The IPCC Scholarship Programme award  funded the 
+development of a novel hybrid stochastic –machine learning framework to down scale CMIP6 
+climate data to 1-minute temporal resolution , with applications in both the Colorado Rockies 
+and Nepal Himalayas.  
+Together, these efforts advanced my dissertation research by establishing scalable, high -
+resolution climate data pipelines that co nnect global climate models to local conservation, 
+hydrologic, and resilience -focused decision -making.  
+Summer 2025  
+Activities & Work Completed  
+• Advanced Animal Waste Management (AWM) climate integration work , continuing 
+development of bias -corrected and dow nscaled climate projection datasets designed for 
+use in the NRCS AWM tool.  
+o Focused on structuring precipitation and temperature inputs so AWM can 
+evaluate waste management practices under future climate conditions , rather 
+than relying solely on historical climate records.  
+• Continued work on CETWI and Agricultural Water Management (AWM) case 
+studies , including:  
+o Finalizing remaining climate inputs and model configurations  
+o Running and validating simulations using processed climate projection datasets  
+• Initiated temporal downscaling workflows , building on previously developed bias 
+correction and climate preprocessing pipelines.  
+• Contributed to erosivity and mitigation -focused case study discussions , providing 
+climate data insights relevant to conservation  practice evaluation.  
+• Began drafting a bias correction -focused research manuscript , emphasizing 
+preservation of statistical relationships and hydrologic relevance.  
+• Initiated development of a Water Resilience Collaborative (WRC) research proposal , 
+expanding climate –hydrologic integration work beyond existing case studies.  
+Software Development  
+• Published the GridFlow library , providing tools for downloading, cropping, clipping, 
+and preprocessing CMIP climate products through both command -line and grap hical 
+interfaces.  
+• Continued refining climate data processing utilities to support:  
+o Bias correction  
+o Temporal aggregation and disaggregation  
+o Quality control and reproducibility across large datasets  
+Dissertation Progress  
+
+--- PAGE 6 ---
+• Prepared and submitted an informal di ssertation draft update  to advisor (Ryan) by July 
+31, summarizing progress on climate data workflows, bias correction methods, and 
+applied case studies.  
+• Clarified dissertation scope around climate projection refinement and application to 
+conservation and h ydrologic modeling , informed by AWM and watershed -scale 
+studies.  
+Infrastructure & Computing  
+• Rebuilt personal research workstation with an NVIDIA RTX 4070 GPU , significantly 
+improving capacity for:  
+o Large -scale climate data processing  
+o Parallel workflows  
+o Future machine learning and downscaling experiments  
+Skills Learned & Strengthened  
+• Applied climate projections for operational conservation tools (NRCS AWM)  
+• Temporal downscaling and high -frequency climate data handling  
+• Research software publication and main tenance  
+• Large -scale computing and GPU -enabled workflows  
+• Integrating climate science with applied agricultural decision -support systems  
+• Managing multi -project research timelines  
+Project / Research Summary  
+During Summer 2025, I focused on operationalizing cl imate projection workflows for applied 
+conservation modeling , with particular emphasis on enabling the NRCS Animal Waste 
+Management (AWM) tool to assess future climate impacts. This work strengthened the 
+connection between climate science and real -world co nservation planning by preparing climate 
+datasets suitable for long -term nutrient and waste management decisions.  
+In parallel, I finalized key case study inputs, advanced temporal downscaling methods, and 
+published the GridFlow software library to support scalable climate data processing. 
+Infrastructure upgrades and dissertation planning further positioned my research for efficient 
+execution of high -resolution climate –hydrologic analyses in subsequent semesters.  
+Fall 2025  
+Conferences & Presentations  
+• Iowa Wa ter Conference (Completed)  
+Title:  Adapting to Extremes: A Scalable Framework for Climate -Resilient Conservation 
+in Iowa  
+Description:  Presented a scalable framework that integrates high -resolution climate 
+projections into hydrologic/erosion modeling to evaluate conservation practices in Upper 
+
+--- PAGE 7 ---
+Duck Creek, including contouring and vegetative buffers, supporting Iowa’s nutrient 
+reduction a nd water quality goals.  
+• AGU Conference (Completed)   
+Title:  Integrated SAR Bands for Surface Soil Moisture Retrieval in Vegetated 
+Landscapes (CONUS)  
+What I presented:  A physics -constrained machine learning framework showing how L-
+band SAR  addresses C -band s aturation under dense crop canopies (the Corn Belt “blind 
+spot”), and how multi -frequency fusion  improves soil moisture retrieval performance at 
+continental scale.  
+Activities & Work Completed  
+• Used future climate projections  to evaluate erosion and runoff risk under projected 
+climate conditions , rather than relying only on historical climate.  
+• Applied and compared management/conservation practice scenarios  to test whether 
+future erosion increases can be mitigated, including:  
+o Contouring  
+o Vegetative buff er strips  
+• Ran watershed -scale simulations in Upper Duck Creek  to assess conservation 
+performance under future conditions and to support climate -resilient conservation 
+planning.  
+Skills Learned & Strengthened  
+• Climate -informed erosion and watershed assessment  using projected climate inputs  
+• Scenario -based evaluation of conservation practices for mitigation under future extremes  
+• Scientific communication across audiences (Iowa water/conservation stakeholders and 
+AGU scientific community)  
+• Remote sensing + ML frami ng for hydrologic variables (soil moisture) under vegetation 
+constraints  
+• Building “physics -constrained” modeling narratives that generalize beyond location -
+specific patterns  
+Project / Presentation Summaries  
+Climate -resilient conservation modeling (Iowa Wa ter Conference):  
+In Fall 2025, I presented a framework that integrates high -resolution climate projections into 
+watershed modeling to assess how erosion and water quality risks may evolve under future 
+climate conditions. Using Upper Duck Creek as a testbed , I evaluated whether conservation 
+practices such as contouring and vegetative buffers can reduce increased erosion risks under 
+projected climates, supporting Iowa’s nutrient reduction and long -term conservation planning 
+goals.  
+Soil moisture retrieval unde r vegetation (AGU 2025):  
+At AGU 2025, I presented a continental -scale analysis demonstrating that L-band SAR is 
+essential  for monitoring soil moisture during peak growing season in high -biomass regions 
+
+--- PAGE 8 ---
+where C-band saturates  (“blind spot”). By combining L -band structural penetration with C -
+band surface sensitivity, multi -frequency fusion  reduced overall error (reported RMSE ≈ 0.012 
+m³/m³) and provided a blueprint for multi -frequency missions like NISAR .  
+Spring 2026  
+Research, Publications & Software  
+• Submitted a systematic review manuscript  titled “Effectiveness of Multivariate Bias 
+Correction in Hydrology and Agriculture: A Systematic Review”  to Hydrology and 
+Earth System Sciences (HESS) . 
+• Submitted the GridFlow software library  to the Journal of Open Source Software 
+(JOSS) : 
+GridFlow: A modular high -performance toolkit for downloading and processing 
+large -scale climate and geospatial datasets  
+   https://github.com/shahbhuwan/GridFlow  
+Water  Resilience Collaborative (WRC) Project  
+• Currently leading research under the Water Resilience Collaborative (WRC)  project.  
+• Completed univariate and multivariate bias correction  for five CMIP6 climate 
+models , producing a consistent, future -ready climate ens emble.  
+• Initiated spatial downscaling  of the bias -corrected ensemble to support watershed - and 
+farm -scale resilience assessments.  
+• Applied downscaled climate projections to evaluate infrastructure and conservation 
+vulnerability under future climate condition s. 
+Urban Heat Island (SUHI) Project  
+• Completed all climate and ancillary data acquisition  for the Surface Urban Heat 
+Island (SUHI)  study.  
+• Prepared datasets required for figure generation and manuscript development.  
+• Next steps include:  
+o Generating spatial and  temporal figures  
+o Writing the manuscript  
+o Inviting Dr. Lu (Civil Engineering)  as a co -author  
+Presentations & Conferences  
+• CALS Research Day (Presented)  – February 3, 2026  
+Title:  Assessing the Vulnerability of Swine Manure Storage to Extreme Weather Events 
+in Northwest Iowa  
+o Presented climate -informed vulnerability analysis showing how reliance on 
+historical stationarity in NRCS manure storage design can mask future failure 
+risks under intensifying storms.  
+
+--- PAGE 9 ---
+o Demonstrated that future climate projections indicate ~17% increases in extreme 
+storm intensity, with implications for emergency pump -outs and environmental 
+compliance.  
+• ASABE Annual International Meeting (Abstract Submitted)   
+Title:  Unmasking Buffer Efficiency: Defining Critical Threshold s for Sediment and 
+Nutrient Retention  
+• Soil and Water Conservation Society (SWCS) Conference (Abstract Submitted)   
+Title:  A Revised Soil Vulnerability Index Based on Physical Erosion Modeling of 
+Seasonal Climate Variability  
+Skills Learned & Strengthened  
+• Multivariate climate bias correction and ensemble processing  
+• Spatial downscaling for climate resilience applications  
+• Climate -informed infrastructure and conservation risk assessment  
+• Research software publication and open -source dissemination  
+• Translating clima te projections into NRCS -relevant decision frameworks  
+• Scientific communication across stakeholder and academic audiences  
+Project / Research Summary  
+During Spring 2026, I focused on operationalizing climate projections for conservation, 
+infrastructure, and resilience planning . I submitted a systematic review on bias correction 
+methods to HESS and a research -grade software library (GridFlow) to JOSS, strengthening the 
+reproducibility and accessibility of climate data workflows.  
+My ongoing WRC project advanced  from bias correction to spatial downscaling of CMIP6 
+ensembles, enabling climate -stress testing of agricultural systems under future extremes. At 
+CALS Research Day, I presented results demonstrating how climate non -stationarity challenges 
+current NRCS man ure storage design assumptions, highlighting the need for physically based, 
+risk-focused planning approaches. In parallel, I advanced urban heat island research and 
+submitted conference abstracts extending my work on buffer efficiency and soil vulnerabilit y 
+classification under evolving climate conditions.  
+ 
+
