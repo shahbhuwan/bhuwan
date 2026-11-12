@@ -104,7 +104,7 @@
               <div class="stat-label">Software Libraries</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number count-up" data-target="10" data-prefix="" data-suffix="">10</div>
+              <div class="stat-number count-up" data-target="12" data-prefix="" data-suffix="">12</div>
               <div class="stat-label">Conference Presentations</div>
             </div>
             <div class="stat-card">
@@ -183,10 +183,9 @@
             interfaces that automates downloading, cropping, clipping, and preprocessing of major
             geospatial and environmental datasets at scale.<br />
 
-            <strong>The Impact:</strong> Submitted to the Journal of Open Source Software (JOSS) and already
-            used across multiple research projects to streamline large-scale data workflows. GridFlow is
-            actively evolving into a unified, high-performance data acquisition and preprocessing hub for
-            environmental and geospatial datasets.
+            <strong>The Impact:</strong> Released as an open-source GitHub package and used across research
+            projects to streamline large-scale data workflows. GridFlow is actively evolving into a unified
+            data acquisition and preprocessing hub for environmental and geospatial datasets.
           </p>
           <div class="project-tags">
             <span class="tag">Python</span>
@@ -203,13 +202,6 @@
                   d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
               </svg>
               GitHub
-            </a>
-            <a href="#publications">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-              </svg>
-              JOSS Paper
             </a>
           </div>
         </div>
@@ -319,9 +311,40 @@
       <div class="reveal">
         <span class="section-label">Published Work</span>
         <h2 class="section-title">Research That Ships</h2>
-        <p class="section-subtitle">Peer-reviewed manuscripts and open-source software papers.</p>
+        <p class="section-subtitle">Peer-reviewed papers and preprints.</p>
       </div>
       <div class="publications-list reveal-stagger">
+
+        <div class="pub-card" id="pub-svi">
+          <div class="pub-header">
+            <h3>Hydrological Sensitivity of the Soil Vulnerability Index to Rainfall Erosivity Gradients in the Central and Eastern United States</h3>
+            <span class="pub-badge preprint">Preprint</span>
+          </div>
+          <p class="pub-journal">SSRN preprint, <a href="https://doi.org/10.2139/ssrn.7119798" target="_blank" rel="noopener noreferrer">doi:10.2139/ssrn.7119798</a>. With Ryan P. McGehee (Iowa State), Allen L. Thompson and Quang Phung (University of Missouri), and Claire Baffaut (USDA ARS). Collaboration with the University of Missouri and USDA-NRCS.</p>
+          <div class="pub-abstract">
+            <p>
+              The Soil Vulnerability Index (SVI) is a United States Department of Agriculture tool that classifies
+              cropland erosion risk from soil properties and topography. It assigns four vulnerability classes, from
+              Low to High, and does not include rainfall erosivity, the rainfall energy that drives erosion. This
+              study evaluates the SVI’s hydrological sensitivity to regional rainfall erosivity gradients across the
+              central and eastern United States. The Water Erosion Prediction Project model was used to simulate
+              long-term soil loss across 669,674 cropland fields in 79 watersheds. Average sediment loss from High
+              and Moderately High fields in the high-rainfall Southern region substantially exceeded Northern
+              counterparts: 233% more for High (Cohen’s d = 2.06) and 166% more for Moderately High (Cohen’s d =
+              1.32). Many Moderately High Southern fields are more consistent with a High classification. Differences
+              for Moderate and Low fields were smaller. Independent SWAT+ simulations showed that the pattern is not
+              specific to one model. Annual erosivity at or above 4,500 MJ·mm·ha⁻¹·h⁻¹, or winter erosivity at or
+              above 1,000 MJ·mm·ha⁻¹·h⁻¹, marks where the SVI’s stationarity assumption breaks down. A
+              slope-conditioned +1 class adjustment raises the SVI class by one level in high-erosivity regions for
+              all Moderately High fields and for Low or Moderate fields on slopes of at least 0.5%. That change
+              reduces inter-regional inconsistency by more than 70% and keeps the index simple enough for
+              conservation programs.
+            </p>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub-svi')">
+            Show abstract <span>→</span>
+          </button>
+        </div>
 
         <div class="pub-card" id="pub1">
           <div class="pub-header">
@@ -352,32 +375,6 @@
             </p>
           </div>
           <button class="pub-toggle" onclick="toggleAbstract('pub1')">
-            Show abstract <span>→</span>
-          </button>
-        </div>
-
-        <div class="pub-card" id="pub2">
-          <div class="pub-header">
-            <h3>GridFlow: A Modular High-Performance Toolkit for Downloading and Processing Large-Scale Climate and
-              Geospatial Datasets</h3>
-            <span class="pub-badge submitted">Submitted</span>
-          </div>
-          <p class="pub-journal">Journal of Open Source Software (JOSS)</p>
-          <div class="pub-abstract">
-            <p>
-              GridFlow is an open-source Python toolkit that streamlines the acquisition and
-              preparation of large climate and geospatial datasets. The library provides both
-              command-line and graphical interfaces to automate bulk downloading, spatial
-              subsetting, temporal aggregation, unit conversion, and metadata cataloging across
-              major data sources including CMIP, ERA5, PRISM, and DEM products. Built with a
-              modular, parallel-ready architecture, GridFlow reduces the time and complexity
-              required to transform raw archives into analysis-ready datasets while improving
-              reproducibility. The software is designed to integrate directly into hydrologic,
-              environmental, and agricultural modeling workflows and is being extended toward a
-              unified high-performance data acquisition and preprocessing hub.
-            </p>
-          </div>
-          <button class="pub-toggle" onclick="toggleAbstract('pub2')">
             Show abstract <span>→</span>
           </button>
         </div>
@@ -553,6 +550,42 @@
         <h2 class="section-title">Sharing Ideas That Matter</h2>
       </div>
       <div class="conf-grid reveal-stagger">
+
+        <!-- AGU 2026 oral -->
+        <div class="conf-card" style="display: flex; flex-direction: column;">
+          <div class="conf-top">
+            <span class="conf-venue">AGU 2026</span>
+            <span class="conf-badge oral">Oral</span>
+          </div>
+          <h3>Bias Correction Fails to Preserve Precipitation Futures and Hot-Wet Risk Across the Contiguous United States</h3>
+          <span class="conf-date">9 December 2026 · H33D-08</span>
+          <div class="conf-data" style="display: none;">
+            <div class="talk-abstract">Bias correction is widely treated as a neutral preprocessing step that makes climate model output usable for impacts assessment. These methods often improve historical marginals and dependence but can reshape future precipitation change and the occurrence of compound hot-wet extremes. To quantify the effect across a range of methods, we evaluate both univariate quantile delta mapping and multivariate bias-correction algorithms on a multi-model CMIP6 ensemble over the contiguous United States, scoring climate-signal fidelity and compound-risk realism jointly. Temperature change is highly consistent: every method produces late-century maximum-temperature increases of the same sign at mapped cells, and most keep domain-mean warming within about 8 to 15 percent of the raw signal. Precipitation change is not. In the case study, CONUS-mean precipitation change ranges from 0.28 times the raw model value to 2.45 times under different methods. Multi-model maps agree on the precipitation-change sign at only about 61 to 73 percent of cells, compared with 100 percent for temperature, and the area of opposite sign relative to the raw ensemble reaches about 48 percent of CONUS. Raw models and univariate correction capture only about 35 to 51 percent of observed CONUS compound counts. Empirical copula coupling restores about 89 percent, while spatial multivariate correction overshoots to about 178 percent. Deficits are largest over southern CONUS. Dependence error falls from about 1.25 in the raw GCM to about 0.15 to 0.20 under stronger schemes, yet the lowest dependence error does not imply the most faithful precipitation climate-change signal. Bias correction is effective only when it jointly preserves large-scale climate change and produces credible compound extremes.</div>
+          </div>
+          <div class="conf-links"
+            style="margin-top: auto; padding-top: 15px; display: flex; gap: 10px; justify-content: flex-end;">
+            <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.85rem;"
+              onclick="openTalkModal(this, 'abstract')">Abstract</button>
+          </div>
+        </div>
+
+        <!-- AGU 2026 poster -->
+        <div class="conf-card" style="display: flex; flex-direction: column;">
+          <div class="conf-top">
+            <span class="conf-venue">AGU 2026</span>
+            <span class="conf-badge poster">Poster</span>
+          </div>
+          <h3>Coarse-Anchored Stochastic Downscaling of Bias-Corrected CMIP6 to Kilometer-Scale Climate Fields over Low-Relief and Complex Terrain</h3>
+          <span class="conf-date">7 December 2026 · IN13D</span>
+          <div class="conf-data" style="display: none;">
+            <div class="talk-abstract">Kilometer-scale daily precipitation and temperature are essential for climate impact applications, yet CMIP6 simulations remain coarse, biased, and free-running relative to observed weather. Over Iowa and Colorado, five CMIP6 models (MPI-ESM1-2-HR, CMCC-ESM2, EC-Earth3, GFDL-CM4, and MRI-ESM2-0) are bias-corrected and downscaled under historical and SSP5-8.5 forcing. Quantile delta mapping and empirical copula coupling (Schaake shuffle) first correct precipitation and daily maximum and minimum temperature at native GCM resolution against PRISM aggregated to the model grid. The bias-corrected fields are then bilinearly interpolated to the PRISM 800 m grid. This preserves the corrected coarse climate but leaves a carrier with drizzle-heavy wet-day frequencies, under-dispersed intensities, muted terrain gradients, and residual GCM-scale structure. CASPAR (Coarse-Anchored Spatially Adaptive Reconstruction) rebuilds that fine-scale structure without rewriting the climate-change signal. Period-wise spatial fields, about 15-day periods, are calibrated against PRISM so the bias-corrected carrier supplies the large-scale climate while local climatological adjustments and temporally persistent spectral noise restore fine-scale structure. Independent validation against PRISM for 2005–2014, shown for MPI-ESM1-2-HR, finds the largest gains where terrain supplies structure. Over Colorado, precipitation climatology spatial correlation rises from about 0.66 for the regridded carrier to about 0.98 after downscaling, and maximum-temperature correlation rises from about 0.81 to about 1.00, with climatological MAE reduced from about 1.6 to about 0.2 °C. Wet-day frequency bias falls from about +0.21 to near zero. Over low-relief Iowa, the same bias falls from about +0.12 to near zero and wet-day intensity structure improves, while large-scale precipitation pattern skill remains set by the bias-corrected coarse field. Late-century mean temperature change stays with the carrier, with a domain-mean signal ratio near 1.0 in both regions.</div>
+          </div>
+          <div class="conf-links"
+            style="margin-top: auto; padding-top: 15px; display: flex; gap: 10px; justify-content: flex-end;">
+            <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.85rem;"
+              onclick="openTalkModal(this, 'abstract')">Abstract</button>
+          </div>
+        </div>
 
         <!-- ASABE Annual 2026 -->
         <div class="conf-card" style="display: flex; flex-direction: column;">
@@ -851,7 +884,7 @@
               <span class="tag">GUI Interface</span>
               <span class="tag">CMIP6 Support</span>
               <span class="tag">Batch Processing</span>
-              <span class="tag amber">JOSS Submitted</span>
+              <span class="tag">Open Source</span>
             </div>
             <div class="software-links">
               <a href="https://github.com/shahbhuwan/GridFlow" target="_blank" rel="noopener noreferrer"

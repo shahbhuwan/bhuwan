@@ -758,6 +758,11 @@ img {
   color: var(--accent-teal);
 }
 
+.pub-badge.preprint {
+  background: rgba(96, 165, 250, 0.15);
+  color: #93c5fd;
+}
+
 .pub-journal {
   font-size: 0.9rem;
   color: var(--text-tertiary);
